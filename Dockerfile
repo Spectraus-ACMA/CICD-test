@@ -6,11 +6,11 @@ RUN apt-get update && apt-get install -y build-essential git
 
 WORKDIR /app
 
-EXPOSE $PORT
+EXPOSE ${PORT:-8080}
 
 # Allows docker to cache installed dependencies between builds
 COPY . /app
 
 RUN pip install -r requirements.txt && python manage.py migrate
 
-CMD python manage.py runserver 0.0.0.0:$PORT
+CMD python manage.py runserver 0.0.0.0:${PORT:-8080}
