@@ -1,6 +1,14 @@
 # CICD-test
 This repo is used to test the CICD process, building docker image and push to GCP cloud run
 
+---
+# Reference
+[a online guid for Github action to cloud run](https://medium.com/google-cloud/how-to-deploy-your-cloud-run-service-using-github-actions-e5b6a6f597a3)
+
+
+---
+
+
 ## martor [![pypi version][1]][2] [![paypal donation][3]][4]
 
 [![license][5]][6] [![python version][7]][8] [![django version][9]][10] [![build][11]][12]
