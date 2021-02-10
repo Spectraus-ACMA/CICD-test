@@ -39,5 +39,6 @@ jobs:
           --image gcr.io/${{ secrets.GCP_PROJECT_ID }}/cicd-test \
           --platform managed \
           --allow-unauthenticated \
-          --project ${{ secrets.GCP_PROJECT_ID }}
+          --project ${{ secrets.GCP_PROJECT_ID }} \
+	  --port 8020
 
